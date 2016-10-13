@@ -1,0 +1,16 @@
+---
+  name: "check_slx_cpu_utilization"
+  description: "check cpu usage and restart appropriate daemons"
+  enabled: true
+
+  trigger:
+    type: "cpu_usage.cpu_utilization"
+
+  action:
+    ref: "cpu_usage.cpu_action"
+    parameters:
+        total_memory: "{{trigger.total_memory}}"
+        free_memory: "{{trigger.free_memory}}"
+        user_name: "{{trigger.user.name}}"
+        password: "{{trigger.user.password}}"
+        host_ip: "{{trigger.host}}"

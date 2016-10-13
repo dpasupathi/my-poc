@@ -1,0 +1,10 @@
+---
+  class_name: "CpuUtilizationSensor"
+  entry_point: "cpu_utilization_sensor.py"
+  description: "Sample sensor that emits triggers."
+  trigger_types:
+    -
+      name: "cpu_utilization"
+      description: "An example trigger."
+      payload_schema:
+        type: "object"

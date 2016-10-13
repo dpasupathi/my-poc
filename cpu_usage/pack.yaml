@@ -1,0 +1,8 @@
+---
+name: cpu-usage-st2
+description: A simple pack containing examples of sensor, rule, and action.
+keywords:
+    - cpu-usage 
+version: 0.1
+author: st2-dev
+email: info@stackstorm.com

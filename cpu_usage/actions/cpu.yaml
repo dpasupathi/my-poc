@@ -1,0 +1,43 @@
+---
+name: cpu-action 
+pack: cpu_usage
+runner_type: "run-python" 
+description: slx cpu st2 action
+enabled: true
+entry_point: cpu.py
+parameters:
+    host_ip:
+        type: string
+        description: hostip 
+        required: true 
+        position: 1 
+
+    port:
+        type: integer 
+        description: port 
+        required: true 
+        position: 2 
+    total_memory:
+        type: integer 
+        description: Greeting you want to say to StackStorm (i.e. Hello, Hi, Yo, etc.)
+        required: false
+        position: 3 
+
+    free_memory:
+        type: integer 
+        description: Greeting you want to say to StackStorm (i.e. Hello, Hi, Yo, etc.)
+        required: false
+        position: 4 
+
+    user_name:
+        type: string
+        description: Greeting you want to say to StackStorm (i.e. Hello, Hi, Yo, etc.)
+        required: false
+        position: 5 
+
+    password:
+        type: string
+        description: Greeting you want to say to StackStorm (i.e. Hello, Hi, Yo, etc.)
+        required: false 
+        position: 6 
+
